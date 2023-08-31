@@ -48,8 +48,6 @@ $(document).ready( ()=> {
             for (let c = 0; c < 9; c++) {
                 let tile = $("<div>")
                     .attr("id", r + "-" + c).addClass("tile")
-                    // .addClass(r == 2 || r == 5 ? "horizontal-line" : "")
-                    // .addClass(c == 2 || c == 5 ? "vertical-line" : "")
                     .on("click", selectTile);
                     if (r == 2 || r == 5) {
                         tile.addClass("horizontal-line");
