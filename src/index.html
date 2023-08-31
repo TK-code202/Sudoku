@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center text-light my-3 shadow">📉Sudoku</h3>
+        <div class="master-board my-3">
+            <div>
+                <button class=" btn btn-secondary" id="check-button">Check</button>
+            </div>
+            <div>
+                <button class="btn btn-info me-4" id="newGame">New Game</button>
+            </div>
+            <div>
+                <h4 class="text-light"><span class="checks-count">0</span> check(s)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="board">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="digits" id="key-digits">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="mode-alert" >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-info shadow-shade">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Sudoku Solver</h1>
+                        <button type="button" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="text-success">🎈🎈Excellent!!!</h3>
+                        <h5>Number Of Checks: <span class="checks-count"></span></h5>
+                        <h5 class="grade"></h5>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
