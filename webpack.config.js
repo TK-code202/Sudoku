@@ -34,7 +34,7 @@ module.exports = {
       outputReport: false
     }),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Sudoku',
       template: './src/index.html',
       inject: 'body'
     })
@@ -47,7 +47,11 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ]
   }
 };
