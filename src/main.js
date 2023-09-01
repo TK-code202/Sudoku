@@ -3,7 +3,9 @@ import { refreshPage, generatePuzzle, puzzles, solutions } from './js/sudoku';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
+import Logo from './assets/img/logo.jpg';
 
+$("link").attr('href', Logo);
 $(document).ready( ()=> {
     let numSelected = null;
     // let tileSelected = null;
